@@ -1,10 +1,3 @@
-//
-//  LQImageLoaderQueue.m
-//  ImageLoaderSample
-//
-//  Created by Andrey on 06/09/15.
-//
-//
 
 #import "LQImageLoaderQueue.h"
 

@@ -1,10 +1,3 @@
-//
-//  LQBlockImageBuilder.h
-//  ImageLoaderSample
-//
-//  Created by Andrey on 04/11/15.
-//
-//
 
 #import <Foundation/Foundation.h>
 #import "LQImageBuilding.h"

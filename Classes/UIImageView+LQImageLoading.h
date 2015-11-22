@@ -1,10 +1,3 @@
-//
-//  UIImageView+LQImageLoading.h
-//  ImageLoaderSample
-//
-//  Created by Andrey on 08/09/15.
-//
-//
 
 #import <UIKit/UIKit.h>
 #import "LQImageLoader.h"

@@ -1,10 +1,3 @@
-//
-//  LQImageHTTPCaching.h
-//  ImageLoaderSample
-//
-//  Created by Andrey on 08/11/15.
-//
-//
 
 #import <Foundation/Foundation.h>
 

@@ -1,10 +1,3 @@
-//
-//  LQImageLoaderQueue.h
-//  ImageLoaderSample
-//
-//  Created by Andrey on 06/09/15.
-//
-//
 
 #import <Foundation/Foundation.h>
 #import "LQMacros.h"

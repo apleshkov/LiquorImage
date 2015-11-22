@@ -1,10 +1,3 @@
-//
-//  LQImageHTTPCache.m
-//  ImageLoaderSample
-//
-//  Created by Andrey on 08/11/15.
-//
-//
 
 #import "LQImageHTTPCache.h"
 #import "LQExtensions.h"

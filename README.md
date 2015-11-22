@@ -2,6 +2,6 @@
 
 Image loading + transforming
 
-(assets/lqimageloader.gif)
+![Demo](assets/lqimageloader.gif)
 
-(assets/lqimageloader_preloading.gif)
+![Preloading demo](assets/lqimageloader_preloading.gif)

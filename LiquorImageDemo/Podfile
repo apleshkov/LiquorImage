@@ -1,0 +1,9 @@
+platform :ios, '8.0'
+
+source "https://github.com/CocoaPods/Specs.git"
+
+pod 'LiquorImage', :podspec => '../LiquorImage.podspec'
+pod 'PureLayout', '3.0.1'
+pod 'UIImage-Categories', '1.0.0'
+pod 'boxBlur', '0.0.1'
+

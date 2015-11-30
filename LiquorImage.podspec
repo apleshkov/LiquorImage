@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.author             = 'Andrew Pleshkov'
     s.social_media_url   = 'https://twitter.com/AndrewPleshkov'
     s.ios.deployment_target = '7.0'
-    s.source       = { :git => 'https://github.com/apleshkov/LiquorImage.git', :branch => 'develop' }
+    s.source       = { :git => 'https://github.com/apleshkov/LiquorImage.git', :tag => s.version.to_s }
     s.source_files = 'LiquorImage/**/*.{h,m}'
     s.requires_arc = true
 end

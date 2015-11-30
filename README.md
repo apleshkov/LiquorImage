@@ -9,6 +9,7 @@ Features:
 - iOS 7.0+
 - Documented
 - Nullability annotated
+- UIImageView (prefixed) category
 
 *[Demo](./LiquorImageDemo/) images are taken from the [Flickr public feed](https://www.flickr.com/services/feeds/docs/photos_public/).*
 

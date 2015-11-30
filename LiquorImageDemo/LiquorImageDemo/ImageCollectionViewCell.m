@@ -90,6 +90,8 @@
         return;
     }
     
+    [[LQImageLoader shared].HTTPCache setURL:url maxAgeInSeconds:1000];
+    
     self.thumbImageTask = ({
         LQImageLoaderTask *task = [[LQImageLoaderTask alloc] initWithURL:url];
         [task setImageBuilder:[ForegroundImageBuilder new] withMemoryCacheIdentifier:@"thumb"];

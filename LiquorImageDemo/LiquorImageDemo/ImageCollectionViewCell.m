@@ -57,8 +57,13 @@
     [self.contentView addSubview:_backgroundImageView];
     [self.contentView addSubview:_thumbImageView];
     [self.contentView addSubview:_authorLabel];
+    
     [_backgroundImageView autoPinEdgesToSuperviewEdges];
-    [_thumbImageView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
+    
+    [_thumbImageView autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self.contentView withMultiplier:0.6 relation:NSLayoutRelationEqual];
+    [_thumbImageView autoMatchDimension:ALDimensionHeight toDimension:ALDimensionHeight ofView:self.contentView withMultiplier:0.6 relation:NSLayoutRelationEqual];
+    [_thumbImageView autoCenterInSuperview];
+    
     [_authorLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(5, 5, 0, 5) excludingEdge:ALEdgeBottom];
     return self;
 }

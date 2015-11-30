@@ -16,6 +16,7 @@
 
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
+@property (nonatomic, getter=isLoading) BOOL loading;
 @property (nonatomic, copy, nullable) NSArray<FlickrImage *> *images;
 @property (nonatomic, readonly, nonnull) UICollectionView *collectionView;
 @property (nonatomic, readonly, nonnull) UIRefreshControl *refreshControl;
@@ -31,14 +32,15 @@ static const NSInteger _kColCount = 2;
 @implementation ViewController
 
 - (void)refreshControlUpdated {
-    [self.refreshControl endRefreshing];
     [self loadData];
 }
 
 - (void)loadData {
-    if (self.refreshControl.isRefreshing) {
+    if (self.isLoading) {
         return;
     }
+    self.loading = YES;
+    [self.refreshControl beginRefreshing];
     typeof(self) __weak weakSelf = self;
     [FlickrImage loadImagesWithCompletion:^(NSArray<FlickrImage *> * _Nullable images, NSError * _Nullable error) {
         [weakSelf didLoadImages:images withError:error];
@@ -46,6 +48,9 @@ static const NSInteger _kColCount = 2;
 }
 
 - (void)didLoadImages:(NSArray<FlickrImage *> *)images withError:(NSError *)error {
+    self.loading = NO;
+    [self.refreshControl endRefreshing];
+    
     self.images = images;
     
     NSMutableArray<NSURL *> *preloads = [NSMutableArray array];
@@ -95,7 +100,7 @@ static const NSInteger _kColCount = 2;
     [_collectionView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeTop];
     [_collectionView autoPinToTopLayoutGuideOfViewController:self withInset:0];
     
-    [_preloadingView autoCenterInSuperview];
+    [_preloadingView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
     
     _preloadingView.hidden = YES;
 }

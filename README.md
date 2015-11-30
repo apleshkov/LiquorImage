@@ -8,7 +8,7 @@ Features:
 - Preloading
 - iOS 7.0+
 
-*[Demo](./LiquorImageDemo/) images are taken from [Flickr public feed](https://www.flickr.com/services/feeds/docs/photos_public/).*
+*[Demo](./LiquorImageDemo/) images are taken from the [Flickr public feed](https://www.flickr.com/services/feeds/docs/photos_public/).*
 
 ## Transforming
 

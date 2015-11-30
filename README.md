@@ -7,6 +7,8 @@ Features:
 - Persistent caching
 - Preloading
 - iOS 7.0+
+- Documented
+- Nullability annotated
 
 *[Demo](./LiquorImageDemo/) images are taken from the [Flickr public feed](https://www.flickr.com/services/feeds/docs/photos_public/).*
 

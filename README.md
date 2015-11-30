@@ -89,9 +89,9 @@ Want to resize and round a downloaded image, which originally is huge and square
 }];
 ```
 
-## Persistent Cache
+## Persistent Caching
 
-You can control the [`max-age`](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9.3) of an image via `HTTPCache`:
+The loader uses HTTP response cache info by default, but you can control the [`max-age`](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9.3) of an image via `HTTPCache`:
 
 ```
 [[LQImageLoader shared].HTTPCache setURL:url maxAgeInSeconds:1000];

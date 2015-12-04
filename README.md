@@ -21,7 +21,7 @@ Want to resize and round a downloaded image, which originally is huge and square
 
 ![Demo](https://cloud.githubusercontent.com/assets/578119/11371533/0a32eed0-92da-11e5-877d-318e56e6238f.gif)
 
-```
+```objc
 //////////////////////////////
 // ForegroundImageBuilder.m //
 //////////////////////////////
@@ -84,7 +84,7 @@ Want to resize and round a downloaded image, which originally is huge and square
 
 ![Preloading demo](https://cloud.githubusercontent.com/assets/578119/11371531/0a03ca56-92da-11e5-904c-ba81511223c5.gif)
 
-```
+```objc
 [[LQImageLoader shared] preloadImageURLs:preloads withProgress:^(LQImageLoaderPreloadingContext * _Nonnull context) {
     textLabel.text = [NSString stringWithFormat:@"Preloading:\n\n%lu / %lu", (unsigned long)context.completedCount, (unsigned long)context.totalCount];
 } completion:^(LQImageLoaderPreloadingContext * _Nonnull context) {
@@ -96,6 +96,6 @@ Want to resize and round a downloaded image, which originally is huge and square
 
 The loader uses HTTP response cache info by default, but you can control the [`max-age`](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9.3) of an image via `HTTPCache`:
 
-```
+```objc
 [[LQImageLoader shared].HTTPCache setURL:url maxAgeInSeconds:1000];
 ```

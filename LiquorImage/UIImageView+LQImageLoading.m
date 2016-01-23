@@ -34,7 +34,7 @@
 }
 
 - (void)lq_setImageWithURL:(NSURL *)url {
-    LQImageLoaderTask *task = [[LQImageLoaderTask alloc] initWithURL:url];
+    LQImageLoaderTask *task = (url ? [[LQImageLoaderTask alloc] initWithURL:url] : nil);
     [self lq_setImageWithTask:task loader:nil];
 }
 

@@ -11,4 +11,6 @@
 
 - (void)lq_setImageWithTask:(nullable LQImageLoaderTask *)task loader:(nullable LQImageLoader *)loader;
 
+- (void)lq_cancelImageLoading;
+
 @end

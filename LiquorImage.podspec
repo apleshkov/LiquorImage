@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'LiquorImage'
-    s.version      = '1.0'
+    s.version      = '1.0.1'
     s.summary      = 'Image downloading, caching, preloading and background transforming. UIImageView category (prefixed) included.'
     s.description = <<-DESC
                     Image downloading, persistent & in-memory caching, preloading and background transforming. UIImageView category (prefixed) included.
